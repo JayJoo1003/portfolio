@@ -35,6 +35,11 @@ export default function About() {
       items: [],
     },
     {
+      title: about.achievements.title,
+      display: about.achievements.display,
+      items: about.achievements.achievements.map((achievement) => achievement.title),
+    },
+    {
       title: about.work.title,
       display: about.work.display,
       items: about.work.experiences.map((experience) => experience.company),
@@ -185,6 +190,55 @@ export default function About() {
             </Column>
           )}
 
+{about.achievements.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.achievements.title}
+                variant="display-strong-s"
+                marginBottom="40"
+              >
+                {about.achievements.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.achievements.achievements.map((achievement, index) => (
+                  <Column key={`${achievement}-${index}`} fillWidth gap="4">
+                    <Text id={achievement.title} variant="heading-strong-l">{achievement.title}</Text>
+                    <Text variant="body-default-m" onBackground="neutral-weak">
+                      {achievement.description}
+                    </Text>
+                    {achievement.images && achievement.images.length > 0 && (
+                      <Flex fillWidth paddingTop="m" gap="12" wrap>
+                        {achievement.images.map((image, index) => (
+                          <Flex
+                            key={index}
+                            border="neutral-medium"
+                            radius="m"
+                            //@ts-ignore
+                            minWidth={image.width}
+                            //@ts-ignore
+                            height={image.height}
+                          >
+                            <Media
+                              enlarge
+                              radius="m"
+                              //@ts-ignore
+                              sizes={image.width.toString()}
+                              //@ts-ignore
+                              alt={image.alt}
+                              //@ts-ignore
+                              src={image.src}
+                            />
+                          </Flex>
+                        ))}
+                      </Flex>
+                    )}
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+
           {about.work.display && (
             <>
               <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
@@ -266,7 +320,7 @@ export default function About() {
               </Column>
             </>
           )}
-
+          
           {about.technical.display && (
             <>
               <Heading

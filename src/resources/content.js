@@ -6,11 +6,11 @@ const person = {
   get name() {
     return `${this.firstName} ${this.lastName}`;
   },
-  role: "Design Engineer",
+  role: "Curious Freshman",
   avatar: "/images/avatar.jpg",
-  email: "example@gmail.com",
-  location: "Asia/Jakarta", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
-  languages: ["English", "Bahasa"], // optional: Leave the array empty if you don't want to display languages
+  email: "jaydenhyungchanjoo@gmail.com",
+  location: "Asia/Seoul", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
+  languages: ["English", "Korean", "Japanese"], // optional: Leave the array empty if you don't want to display languages
 };
 
 const newsletter = {
@@ -30,17 +30,7 @@ const social = [
   {
     name: "GitHub",
     icon: "github",
-    link: "https://github.com/once-ui-system/nextjs-starter",
-  },
-  {
-    name: "LinkedIn",
-    icon: "linkedin",
-    link: "https://www.linkedin.com/company/once-ui/",
-  },
-  {
-    name: "Threads",
-    icon: "threads",
-    link: "https://www.threads.com/@once_ui",
+    link: "https://github.com/JayJoo1003",
   },
   {
     name: "Email",
@@ -76,13 +66,13 @@ const about = {
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
-    subItems: false,
+    subItems: true,
   },
   avatar: {
     display: true,
   },
   calendar: {
-    display: true,
+    display: false,
     link: "https://cal.com",
   },
   intro: {
@@ -90,29 +80,39 @@ const about = {
     title: "Introduction",
     description: (
       <>
-        Selene is a Jakarta-based design engineer with a passion for transforming complex challenges
-        into simple, elegant design solutions. Her work spans digital interfaces, interactive
-        experiences, and the convergence of design and technology.
+        I am a freshman at YISS with interests both inside and outside school. While I have some background in sports, such as being part of the school’s cross country team and playing golf for several years, I am especially drawn to academics. I enjoy exploring subjects like coding, where I can solve problems and create projects, and biology, where I learn more about how life and the human body work.
       </>
     ),
   },
+  achievements: {
+    display: true, // set to false to hide this section
+    title: "Academic Acheivements",
+    achievements: [
+      {
+        title: "Python",
+        description: <>About python experience</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/projects/project-01/python-logo.png",
+            alt: "Project image",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+    ],
+  },
   work: {
     display: true, // set to false to hide this section
-    title: "Work Experience",
+    title: "Activities & Experiences",
     experiences: [
       {
-        company: "FLY",
-        timeframe: "2022 - Present",
-        role: "Senior Design Engineer",
+        company: "Portfolio Making",
+        timeframe: "Aug 10, 2025 - Present",
+        role: "Developer",
         achievements: [
-          <>
-            Redesigned the UI/UX for the FLY platform, resulting in a 20% increase in user
-            engagement and 30% faster load times.
-          </>,
-          <>
-            Spearheaded the integration of AI tools into design workflows, enabling designers to
-            iterate 50% faster.
-          </>,
+          <>achievements</>,
         ],
         images: [
           // optional: leave the array empty if you don't want to display images
@@ -144,25 +144,33 @@ const about = {
   },
   studies: {
     display: true, // set to false to hide this section
-    title: "Studies",
+    title: "Education",
     institutions: [
       {
-        name: "University of Jakarta",
-        description: <>Studied software engineering.</>,
+        name: "Yongsan International School of Seoul",
+        description: <>Middle and High School</>,
       },
       {
-        name: "Build the Future",
+        name: "Seoul Foreign School",
+        description: <>Studied online marketing and personal branding.</>,
+      },
+      {
+        name: "Soongeui Elementary School",
+        description: <>Studied online marketing and personal branding.</>,
+      },
+      {
+        name: "Dulwich College Seoul",
         description: <>Studied online marketing and personal branding.</>,
       },
     ],
   },
   technical: {
     display: true, // set to false to hide this section
-    title: "Technical skills",
+    title: "Skills",
     skills: [
       {
-        title: "Figma",
-        description: <>Able to prototype in Figma with Once UI with unnatural speed.</>,
+        title: "Sports",
+        description: <>I have been active in sports for many years, starting with golf, which I have played for seven years and continue to enjoy as a member of the YISS golf club. Alongside golf, I also play badminton as a hobby. Since middle school, I have been a part of my school’s cross country team, and I am continuing with it as a freshman, building endurance and teamwork. Altogether, these sports have shaped my athletic experience by giving me both individual and team challenges.</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -180,14 +188,14 @@ const about = {
         ],
       },
       {
-        title: "Next.js",
-        description: <>Building next gen apps with Next.js + Once UI + Supabase.</>,
+        title: "Python",
+        description: <>About python experience</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-04.jpg",
+            src: "/images/projects/project-01/python-logo.png",
             alt: "Project image",
-            width: 16,
+            width: 9,
             height: 9,
           },
         ],
