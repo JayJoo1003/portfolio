@@ -7,7 +7,7 @@ const person = {
     return `${this.firstName} ${this.lastName}`;
   },
   role: "Curious Freshman",
-  avatar: "/images/avatar.jpg",
+  avatar: "/images/mickeymouse.jpg",
   email: "jaydenhyungchanjoo@gmail.com",
   location: "Asia/Seoul", // Expecting the IANA time zone identifier, e.g., 'Europe/Vienna'
   languages: ["English", "Korean", "Japanese"], // optional: Leave the array empty if you don't want to display languages
@@ -48,7 +48,7 @@ const home = {
   headline: <>Building bridges between design and code</>,
   featured: {
     display: true,
-    title: <>Recent project: <strong className="ml-4">Once UI</strong></>,
+    title: <>Recent project: <strong className="ml-4">Portfolio Website Development</strong></>,
     href: "/work/building-once-ui-a-customizable-design-system",
   },
   subline: (
@@ -66,7 +66,7 @@ const about = {
   description: `Meet ${person.name}, ${person.role} from ${person.location}`,
   tableOfContent: {
     display: true,
-    subItems: true,
+    subItems: false,
   },
   avatar: {
     display: true,
@@ -86,16 +86,66 @@ const about = {
   },
   achievements: {
     display: true, // set to false to hide this section
-    title: "Academic Acheivements",
+    title: "Achievements",
     achievements: [
       {
-        title: "Python",
-        description: <>About python experience</>,
+        title: "2023 Asian Intercontinental Make X Tournament starter skill test winner",
+        description: <></>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/python-logo.png",
-            alt: "Project image",
+            src: "/images/Achievements/IMG_7113.jpeg",
+            alt: "2023 Asian Intercontinental Make X Tournament",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "YISS Vex Robotics 8th Grade course",
+        description: <>I have participated in the </>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "2024 JJGA 2nd place",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "SCPGA Junior Tour",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "International Math Modeling Competition",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [],
+      },
+      {
+        title: "Cross Country KAIAC race",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/Achievements/KAIACxccomp.png",
+            alt: "2024 Chadiwck International KAIAC Cross Country Race",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Seoul Foreign School Middle School Mathematics Competition",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/Achievements/sfsmathcomp.webp",
+            alt: "2nd Annual Seoul Foreign School Middle School Mathematics Competition",
             width: 16,
             height: 9,
           },
@@ -108,21 +158,33 @@ const about = {
     title: "Activities & Experiences",
     experiences: [
       {
-        company: "Portfolio Making",
-        timeframe: "Aug 10, 2025 - Present",
-        role: "Developer",
+        company: "Portfolio Website Development",
+        timeframe: "Aug 2025 - Sep 2025",
+        role: "Frontend Developer",
         achievements: [
-          <>achievements</>,
+          <>
+            Built my first personal portfolio website using Next.js template,
+            customizing the design to reflect my personal style and brand
+            identity
+          </>,
+          <>
+            Successfully deployed the website to Vercel with seamless CI/CD
+            integration, experiencing the satisfaction of seeing my work go live
+          </>,
+          <>
+            Gained valuable insights into modern web development workflow, from
+            initial setup to production deployment
+          </>,
+          <>
+            Developed an eye for UI/UX details while personalizing components
+            and layout to create a cohesive visual experience
+          </>,
+          <>
+            Understood the significance of SEO optimization and performance
+            considerations in real-world web development projects
+          </>,
         ],
-        images: [
-          // optional: leave the array empty if you don't want to display images
-          {
-            src: "/images/projects/project-01/cover-01.jpg",
-            alt: "Once UI Project",
-            width: 16,
-            height: 9,
-          },
-        ],
+        images: []
       },
       {
         company: "Creativ3",
@@ -152,15 +214,15 @@ const about = {
       },
       {
         name: "Seoul Foreign School",
-        description: <>Studied online marketing and personal branding.</>,
+        description: <>Elementary and Middle School</>,
       },
       {
         name: "Soongeui Elementary School",
-        description: <>Studied online marketing and personal branding.</>,
+        description: <>Elementary School</>,
       },
       {
         name: "Dulwich College Seoul",
-        description: <>Studied online marketing and personal branding.</>,
+        description: <>Toddler and Reception</>,
       },
     ],
   },
@@ -215,9 +277,9 @@ const blog = {
 
 const work = {
   path: "/work",
-  label: "Work",
-  title: `Projects – ${person.name}`,
-  description: `Design and dev projects by ${person.name}`,
+  label: "Activities & Experiences",
+  title: `Activities & Experiences – ${person.name}`,
+  description: `Design and dev projects of ${person.name}`,
   // Create new project pages by adding a new .mdx file to app/blog/posts
   // All projects will be listed on the /home and /work routes
 };

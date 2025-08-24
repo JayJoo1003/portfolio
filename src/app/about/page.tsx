@@ -189,57 +189,7 @@ export default function About() {
               {about.intro.description}
             </Column>
           )}
-
-{about.achievements.display && (
-            <>
-              <Heading
-                as="h2"
-                id={about.achievements.title}
-                variant="display-strong-s"
-                marginBottom="40"
-              >
-                {about.achievements.title}
-              </Heading>
-              <Column fillWidth gap="l" marginBottom="40">
-                {about.achievements.achievements.map((achievement, index) => (
-                  <Column key={`${achievement}-${index}`} fillWidth gap="4">
-                    <Text id={achievement.title} variant="heading-strong-l">{achievement.title}</Text>
-                    <Text variant="body-default-m" onBackground="neutral-weak">
-                      {achievement.description}
-                    </Text>
-                    {achievement.images && achievement.images.length > 0 && (
-                      <Flex fillWidth paddingTop="m" gap="12" wrap>
-                        {achievement.images.map((image, index) => (
-                          <Flex
-                            key={index}
-                            border="neutral-medium"
-                            radius="m"
-                            //@ts-ignore
-                            minWidth={image.width}
-                            //@ts-ignore
-                            height={image.height}
-                          >
-                            <Media
-                              enlarge
-                              radius="m"
-                              //@ts-ignore
-                              sizes={image.width.toString()}
-                              //@ts-ignore
-                              alt={image.alt}
-                              //@ts-ignore
-                              src={image.src}
-                            />
-                          </Flex>
-                        ))}
-                      </Flex>
-                    )}
-                  </Column>
-                ))}
-              </Column>
-            </>
-          )}
-
-          {about.work.display && (
+{about.work.display && (
             <>
               <Heading as="h2" id={about.work.title} variant="display-strong-s" marginBottom="m">
                 {about.work.title}
@@ -272,6 +222,55 @@ export default function About() {
                     {experience.images.length > 0 && (
                       <Flex fillWidth paddingTop="m" paddingLeft="40" gap="12" wrap>
                         {experience.images.map((image, index) => (
+                          <Flex
+                            key={index}
+                            border="neutral-medium"
+                            radius="m"
+                            //@ts-ignore
+                            minWidth={image.width}
+                            //@ts-ignore
+                            height={image.height}
+                          >
+                            <Media
+                              enlarge
+                              radius="m"
+                              //@ts-ignore
+                              sizes={image.width.toString()}
+                              //@ts-ignore
+                              alt={image.alt}
+                              //@ts-ignore
+                              src={image.src}
+                            />
+                          </Flex>
+                        ))}
+                      </Flex>
+                    )}
+                  </Column>
+                ))}
+              </Column>
+            </>
+          )}
+          
+{about.achievements.display && (
+            <>
+              <Heading
+                as="h2"
+                id={about.achievements.title}
+                variant="display-strong-s"
+                marginBottom="40"
+              >
+                {about.achievements.title}
+              </Heading>
+              <Column fillWidth gap="l" marginBottom="40">
+                {about.achievements.achievements.map((achievement, index) => (
+                  <Column key={`${achievement}-${index}`} fillWidth gap="4">
+                    <Text id={achievement.title} variant="heading-strong-l">{achievement.title}</Text>
+                    <Text variant="body-default-m" onBackground="neutral-weak">
+                      {achievement.description}
+                    </Text>
+                    {achievement.images && achievement.images.length > 0 && (
+                      <Flex fillWidth paddingTop="m" gap="12" wrap>
+                        {achievement.images.map((image, index) => (
                           <Flex
                             key={index}
                             border="neutral-medium"
