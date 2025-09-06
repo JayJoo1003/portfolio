@@ -45,7 +45,7 @@ const home = {
   label: "Home",
   title: `${person.name}'s Portfolio`,
   description: `Portfolio website showcasing my work as a ${person.role}`,
-  headline: <>Building bridges between design and code</>,
+  headline: <>Passions of Jayden Joo</>,
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Portfolio Website Development</strong></>,
@@ -90,7 +90,7 @@ const about = {
     achievements: [
       {
         title: "2023 Asian Intercontinental Make X Tournament starter skill test winner",
-        description: <></>,
+        description: <>I have participated in the 2023 Make X game in Thailand and have gotten first place in the skill test</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -103,36 +103,49 @@ const about = {
       },
       {
         title: "YISS Vex Robotics 8th Grade course",
-        description: <>I have participated in the </>,
+        description: <>I have been a part of the YISS Robotics course for a semester</>,
         // optional: leave the array empty if you don't want to display images
         images: [],
       },
       {
         title: "2024 JJGA 2nd place",
-        description: <></>,
+        description: <>I have gotten second place at the Royal Meadow Golf Club in Japan</>,
         // optional: leave the array empty if you don't want to display images
         images: [],
       },
       {
         title: "SCPGA Junior Tour",
-        description: <></>,
+        description: <>I have participated in the 2025 SCPGA Junior Tour in Chino, California</>,
         // optional: leave the array empty if you don't want to display images
         images: [],
       },
       {
         title: "International Math Modeling Competition",
-        description: <></>,
+        description: <>I have participated in the 2025 IMMC competition with my peers</>,
         // optional: leave the array empty if you don't want to display images
         images: [],
       },
       {
-        title: "Cross Country KAIAC race",
-        description: <></>,
+        title: "2024 MS Cross Country KAIAC race",
+        description: <>I have ran in the 2024 CC KAIAC race at Chadwick International</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
             src: "/images/Achievements/KAIACxccomp.png",
             alt: "2024 Chadiwck International KAIAC Cross Country Race",
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "2025 HS Cross Country KAIAC race (1)",
+        description: <></>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/Achievements/image.png",
+            alt: "2025 Seoul Foreign School Cross Country Race",
             width: 16,
             height: 9,
           },
@@ -187,18 +200,37 @@ const about = {
         images: []
       },
       {
-        company: "Creativ3",
-        timeframe: "2018 - 2022",
-        role: "Lead Designer",
+        company: "Helping Kids Everyday",
+        timeframe: "2025",
+        role: "Club Member",
         achievements: [
           <>
-            Developed a design system that unified the brand across multiple platforms, improving
-            design consistency by 40%.
+            HKE is a club focused on helping out with schoolwide fair and events, as well as visiting orphanages around Seoul.
           </>,
+        ],
+        images: [],
+      },
+      {
+        company: "Blue and Red Ink",
+        timeframe: "2025",
+        role: "Photographer",
+        achievements: [
           <>
-            Led a cross-functional team to launch a new product line, contributing to a 15% increase
-            in overall company revenue.
+            Brink is a school wide newspaper club, publishing informant articles every month. I have participated as a photographer.
           </>,
+          
+        ],
+        images: [],
+      },
+      {
+        company: "Blue and Red Ink",
+        timeframe: "2025",
+        role: "Photographer",
+        achievements: [
+          <>
+            Brink is a school wide newspaper club, publishing informant articles every month. I have participated as a photographer.
+          </>,
+          
         ],
         images: [],
       },
