@@ -53,8 +53,7 @@ const home = {
   },
   subline: (
     <>
-      I'm Selene, a design engineer at <Logo icon="/trademarks/wordmark-dark.svg" style={{ display: "inline-flex", top: "0.25em", marginLeft: "-0.25em" }}/>, where I craft intuitive
-      <br /> user experiences. After hours, I build my own projects.
+      Innovative problem solver and strategic thinker
     </>
   ),
 };
@@ -140,7 +139,7 @@ const about = {
       },
       {
         title: "2025 HS Cross Country KAIAC race (1)",
-        description: <></>,
+        description: <>I have ran in the 2025 HS race in SFS and have scored 3rd place in the YISS team for the boys open race division</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -153,7 +152,7 @@ const about = {
       },
       {
         title: "Seoul Foreign School Middle School Mathematics Competition",
-        description: <></>,
+        description: <>I have partnered up with 3 other Middle School students to participate in a mathematics competition at SFS and scored 4th place</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
@@ -205,7 +204,13 @@ const about = {
         role: "Club Member",
         achievements: [
           <>
-            HKE is a club focused on helping out with schoolwide fair and events, as well as visiting orphanages around Seoul.
+            HKE is a club focused on helping out with schoolwide fair and events
+          </>,
+          <>
+          Direct contact with orphanages and serve kids
+          </>,
+          <>
+          Largest service club in YISS
           </>,
         ],
         images: [],
@@ -217,18 +222,39 @@ const about = {
         achievements: [
           <>
             Brink is a school wide newspaper club, publishing informant articles every month. I have participated as a photographer.
+          </>,
+          <>
+          In charge of all processes of journalism including interviewing and photo-taking
           </>,
           
         ],
         images: [],
       },
       {
-        company: "Blue and Red Ink",
+        company: "Eco-today",
         timeframe: "2025",
-        role: "Photographer",
+        role: "Club Member",
         achievements: [
           <>
-            Brink is a school wide newspaper club, publishing informant articles every month. I have participated as a photographer.
+          Eco-today is a school club focused on spreading awareness for environmental issues by creating posters, and trash-picking
+          </>,
+          <>
+          Fundraise and donate to organizations
+          </>,
+          <>
+          Compete in environment-related competitions
+          </>,
+          
+        ],
+        images: [],
+      },
+      {
+        company: "Advanced Math Circle",
+        timeframe: "2025",
+        role: "Club Member",
+        achievements: [
+          <>
+            Advanced Math Circle is a club that consistently participates in math competitions, and teaches math to younger students
           </>,
           
         ],
@@ -283,7 +309,7 @@ const about = {
       },
       {
         title: "Python",
-        description: <>About python experience</>,
+        description: <>I have learnt the Python skill for more than 4 years</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
