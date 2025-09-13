@@ -22,6 +22,7 @@ export async function generateMetadata() {
     description: home.description,
     url: "./",
     images: ["/images/avatar.jpg"],
+    type: "website",
   },
 };
 }
