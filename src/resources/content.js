@@ -130,7 +130,7 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/Achievements/sfsmathcomp.webp",
+            src: "/images/Achievements/sfsmathcomp.png",
             alt: "2nd Annual Seoul Foreign School Middle School Mathematics Competition",
             width: 16,
             height: 9,
@@ -268,7 +268,7 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/Achievements/sfsmathcomp.webp",
+            src: "/images/Achievements/sfsmathcomp.png",
             alt: "Project image",
             width: 16,
             height: 9,
