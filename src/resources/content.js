@@ -49,7 +49,7 @@ const home = {
   featured: {
     display: true,
     title: <>Recent project: <strong className="ml-4">Portfolio Website Development</strong></>,
-    href: "/work/building-once-ui-a-customizable-design-system",
+    href: "/work/portfolio-project",
   },
   subline: (
     <>
@@ -93,7 +93,7 @@ const about = {
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/Achievements/IMG_7113.jpeg",
+            src: "/images/Achievements/IMG_7113.png",
             alt: "2023 Asian Intercontinental Make X Tournament",
             width: 16,
             height: 9,
@@ -123,32 +123,6 @@ const about = {
         description: <>I have participated in the 2025 IMMC competition with my peers</>,
         // optional: leave the array empty if you don't want to display images
         images: [],
-      },
-      {
-        title: "2024 MS Cross Country KAIAC race",
-        description: <>I have ran in the 2024 CC KAIAC race at Chadwick International</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/Achievements/KAIACxccomp.png",
-            alt: "2024 Chadiwck International KAIAC Cross Country Race",
-            width: 16,
-            height: 9,
-          },
-        ],
-      },
-      {
-        title: "2025 HS Cross Country KAIAC race (1)",
-        description: <>I have ran in the 2025 HS race in SFS and have scored 3rd place in the YISS team for the boys open race division</>,
-        // optional: leave the array empty if you don't want to display images
-        images: [
-          {
-            src: "/images/Achievements/image.png",
-            alt: "2025 Seoul Foreign School Cross Country Race",
-            width: 16,
-            height: 9,
-          },
-        ],
       },
       {
         title: "Seoul Foreign School Middle School Mathematics Competition",
@@ -289,18 +263,12 @@ const about = {
     title: "Skills",
     skills: [
       {
-        title: "Sports",
-        description: <>I have been active in sports for many years, starting with golf, which I have played for seven years and continue to enjoy as a member of the YISS golf club. Alongside golf, I also play badminton as a hobby. Since middle school, I have been a part of my school’s cross country team, and I am continuing with it as a freshman, building endurance and teamwork. Altogether, these sports have shaped my athletic experience by giving me both individual and team challenges.</>,
+        title: "Math",
+        description: <>I have consistently been a part of the YISS advanced mathematics class, taking harder levels of math relative to the oroginal curriculum. I have made use of my skills by joining the Advanced Math Club at YISS as well as participating in the Annual Middle School Mathematics Competition at SFS alongside the International Math Modeling Competition in my freshman year</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/cover-02.jpg",
-            alt: "Project image",
-            width: 16,
-            height: 9,
-          },
-          {
-            src: "/images/projects/project-01/cover-03.jpg",
+            src: "/images/Achievements/sfsmathcomp.webp",
             alt: "Project image",
             width: 16,
             height: 9,
@@ -308,14 +276,43 @@ const about = {
         ],
       },
       {
-        title: "Python",
-        description: <>I have learnt the Python skill for more than 4 years</>,
+        title: "Robotics",
+        description: <>I have participated in multiple robotics competitions such as Make X, both at Seoul National University and Thailand, and Vex iq at Songdo</>,
         // optional: leave the array empty if you don't want to display images
         images: [
           {
-            src: "/images/projects/project-01/python-logo.png",
+            src: "/images/Achievements/IMG_7113.png",
             alt: "Project image",
-            width: 9,
+            width: 16,
+            height: 9,
+          },
+        ],
+      },
+      {
+        title: "Coding",
+        description: <>I have spend multiple years acquiring coding skills such as Python and Javascript</>,
+        // optional: leave the array empty if you don't want to display images
+      },
+      {
+        title: "Golf",
+        description: <>I have been involved with golf for ane extremely long time, with experiences in the JJGA competition in Japan and the SCPGA tournament in California. I am also a part of the YISS golf club, attending weekly meetings</>,
+        // optional: leave the array empty if you don't want to display images
+      },
+      {
+        title: "Cross Country",
+        description: <>I have also devoted much of my time into cross country, with running experiences in Chadwick International, selected as a KAIAC runner, Korea International School, Yongsan International School of Seoul, and Seoul Foreign School</>,
+        // optional: leave the array empty if you don't want to display images
+        images: [
+          {
+            src: "/images/Achievements/KAIACxccomp.png",
+            alt: "2024 Chadiwck International KAIAC Cross Country Race",
+            width: 16,
+            height: 9,
+          },
+          {
+            src: "/images/Achievements/image.png",
+            alt: "2025 Seoul Foreign School Cross Country Race",
+            width: 16,
             height: 9,
           },
         ],
@@ -351,12 +348,32 @@ const gallery = {
   // These are placeholder images, replace with your own
   images: [
     {
-      src: "/images/gallery/horizontal-1.jpg",
+      src: "/images/Achievements/sfsmathcomp.png",
       alt: "image",
       orientation: "horizontal",
     },
     {
-      src: "/images/gallery/vertical-1.jpg",
+      src: "/images/Achievements/image.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/Achievements/IMG_7113.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/og/home.jpg",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/homepage.png",
+      alt: "image",
+      orientation: "horizontal",
+    },
+    {
+      src: "/images/Achievements/KAIACxccomp.png",
       alt: "image",
       orientation: "vertical",
     },

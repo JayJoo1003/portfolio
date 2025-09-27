@@ -1,91 +1,146 @@
-# Magic Portfolio
+# Jayden's Portfolio Website
 
-Magic Portfolio is a simple, clean, beginner-friendly portfolio template. It supports an MDX-based content system for projects and blog posts, an about / CV page and a gallery.
+A personal portfolio website built using the Magic Portfolio template. This project showcases my interests, achievements, and learning journey as a middle school student exploring web development.
 
-View the demo [here](https://demo.magic-portfolio.com).
+## 🌟 About This Project
 
-![Magic Portfolio](public/images/og/home.jpg)
+This is my first portfolio website where I learned about modern web development using Next.js and React. I customized the Magic Portfolio template to create a personal space that represents who I am as a student interested in technology, sports, and academics.
 
-## Getting started
+## 🚀 Live Demo
 
-**1. Clone the repository**
-```
-git clone https://github.com/once-ui-system/magic-portfolio.git
-```
+Visit my portfolio: [https://jaydenjoo.vercel.app](https://jaydenjoo.vercel.app)
 
-**2. Install dependencies**
-```
-npm install
-```
+## 🛠️ Tech Stack
 
-**3. Run dev server**
-```
-npm run dev
-```
+- **Next.js 15** - React framework for building the website
+- **React 19** - JavaScript library for user interfaces
+- **TypeScript** - JavaScript with type safety
+- **Sass** - CSS preprocessor for styling
+- **Magic Portfolio Template** - Base template that I customized
+- **Vercel** - Hosting and deployment platform
 
-**4. Edit config**
-```
-src/resources/once-ui.config.js
-```
+## 📁 Project Structure
 
-**5. Edit content**
 ```
-src/resources/content.js
-```
-
-**6. Create blog posts / projects**
-```
-Add a new .mdx file to src/app/blog/posts or src/app/work/projects
+src/
+├── app/                    # Website pages
+│   ├── about/             # About me page
+│   ├── blog/              # Blog posts
+│   ├── work/              # My projects and activities
+│   ├── gallery/           # Photo gallery
+│   └── api/               # API routes
+├── components/            # Reusable website parts
+├── resources/             # Content and configuration
+└── utils/                 # Helper functions
 ```
 
-Magic Portfolio was built with [Once UI](https://once-ui.com) for [Next.js](https://nextjs.org). It requires Node.js v18.17+.
+## ✨ Features
 
-## Documentation
+- **Responsive Design** - Works on all devices
+- **Dark/Light Theme** - Automatic theme switching
+- **Blog System** - MDX-based blog posts
+- **Project Showcase** - Display my work and activities
+- **Photo Gallery** - Masonry layout for images
+- **SEO Optimized** - Better search engine visibility
 
-Docs available at: [docs.once-ui.com](https://docs.once-ui.com/docs/magic-portfolio/quick-start)
+## 🎯 What I Learned
 
-## Features
+Through this project, I gained experience with:
 
-### Once UI
-- All tokens, components & features of [Once UI](https://once-ui.com)
+- Modern web development tools
+- React components and state management
+- Website deployment and hosting
+- Version control with Git
+- Responsive design principles
+- Content management systems
 
-### SEO
-- Automatic open-graph and X image generation with next/og
-- Automatic schema and metadata generation based on the content file
+## 🚀 Getting Started
 
-### Design
-- Responsive layout optimized for all screen sizes
-- Timeless design without heavy animations and motion
-- Endless customization options through [data attributes](https://once-ui.com/docs/theming)
+If you want to run this project locally:
 
-### Content
-- Render sections conditionally based on the content file
-- Enable or disable pages for blog, work, gallery and about / CV
-- Generate and display social links automatically
-- Set up password protection for URLs
+1. **Clone the repository**
 
-### Localization
-- A localized, earlier version of Magic Portfolio is available with the next-intl library
-- To use localization, switch to the 'i18n' branch
+   ```bash
+   git clone https://github.com/JayJoo1003/portfolio.git
+   ```
 
-## Creators
+2. **Install dependencies**
 
-Lorant One: [Threads](https://www.threads.net/@lorant.one) / [LinkedIn](https://www.linkedin.com/in/lorant-one/)
+   ```bash
+   npm install
+   ```
 
-## Get involved
+3. **Start the development server**
 
-- Join the Design Engineers Club on [Discord](https://discord.com/invite/5EyAQ4eNdS) and share your project with us!
-- Deployed your docs? Share it on the [Once UI Hub](https://once-ui.com/hub) too! We feature our favorite apps on our landing page.
+   ```bash
+   npm run dev
+   ```
 
-## License
+4. **Open your browser**
+   Visit [http://localhost:3000](http://localhost:3000)
 
-Distributed under the CC BY-NC 4.0 License.
-- Attribution is required.
-- Commercial usage is not allowed.
-- You can extend the license to [Dopler CC](https://dopler.app/license) by purchasing a [Once UI Pro](https://once-ui.com/pricing) license.
+## 📝 Customization
 
-See `LICENSE.txt` for more information.
+To customize this template for your own portfolio:
 
-## Deploy with Vercel
+1. Edit `src/resources/content.js` to change all the text content
+2. Replace images in the `public/images/` folder
+3. Modify `src/resources/once-ui.config.js` for styling options
+4. Add your own blog posts in `src/app/blog/posts/`
+5. Add your projects in `src/app/work/projects/`
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&project-name=portfolio&repository-name=portfolio&redirect-url=https%3A%2F%2Fgithub.com%2Fonce-ui-system%2Fmagic-portfolio&demo-title=Magic%20Portfolio&demo-description=Showcase%20your%20designers%20or%20developer%20portfolio&demo-url=https%3A%2F%2Fdemo.magic-portfolio.com&demo-image=%2F%2Fraw.githubusercontent.com%2Fonce-ui-system%2Fmagic-portfolio%2Fmain%2Fpublic%2Fimages%2Fog%2Fhome.jpg)
+## 🎨 Design System
+
+This project uses the Once UI design system, which provides:
+
+- Consistent color schemes
+- Typography scales
+- Spacing systems
+- Component library
+- Theme customization
+
+## 📱 Pages
+
+- **Home** - Introduction and latest updates
+- **About** - My story, achievements, and interests
+- **Activities & Experiences** - Projects and activities I've been involved in
+- **Blog** - Thoughts and learning experiences
+- **Gallery** - Photos from my life and interests
+
+## 🔧 Development
+
+### Available Scripts
+
+- `npm run dev` - Start development server
+- `npm run build` - Build for production
+- `npm run start` - Start production server
+- `npm run lint` - Run code linting
+
+### Environment Variables
+
+Create a `.env.local` file for any environment-specific settings.
+
+## 📚 Resources
+
+- [Next.js Documentation](https://nextjs.org/docs)
+- [React Documentation](https://react.dev)
+- [Once UI Documentation](https://docs.once-ui.com)
+- [Magic Portfolio Template](https://github.com/once-ui-system/magic-portfolio)
+
+## 🙏 Acknowledgments
+
+- Thanks to the Once UI team for creating the Magic Portfolio template
+- Thanks to the Next.js and React communities for excellent documentation
+- Thanks to Vercel for providing free hosting for students
+
+## 📞 Contact
+
+- **GitHub**: [@JayJoo1003](https://github.com/JayJoo1003)
+- **Website**: [https://jaydenjoo.vercel.app](https://jaydenjoo.vercel.app)
+
+---
+
+**Student**: Jayden Joo  
+**School**: YISS  
+**Grade**: Freshman
+**Project Duration**: August 2025 - September 2025
