@@ -17,13 +17,6 @@ export async function generateMetadata() {
     path: home.path,
     image: home.image,
   }),
-  openGraph:{
-    title: home.title,
-    description: home.description,
-    url: "./",
-    images: ["/images/avatar.jpg"],
-    type: "website",
-  },
 };
 }
 
@@ -46,6 +39,9 @@ export default async function RootLayout({
       )}
     >
       <head>
+      <meta name="og:image" content={home.image} />
+      <meta name="og:title" content={home.title} />
+      <meta name="og:description" content={home.description} />
         <script
           id="theme-init"
           dangerouslySetInnerHTML={{
