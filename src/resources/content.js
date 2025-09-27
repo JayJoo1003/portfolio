@@ -13,6 +13,7 @@ const person = {
   languages: ["English", "Korean", "Japanese"], // optional: Leave the array empty if you don't want to display languages
 };
 
+
 const newsletter = {
   display: false,
   title: <>Subscribe to {person.firstName}'s Newsletter</>,
